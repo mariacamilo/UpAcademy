@@ -1,34 +1,32 @@
 package io.altar.jseproject.model;
 
-public class Product {
+import java.util.ArrayList;
+import java.util.List;
 
-	private int id;
-	private int shelfIn;
-	private double valorUniDes;
-	private double iva;
-	private double pvp;
+public class Product extends Entity_ {
 
-	public Product(int id, int shelfIn, double valorUniDes, double iva, double pvp) {
-		this.id = id;
+	private List<Long> shelfIn = new ArrayList<Long>();
+	private int valorUniDes;
+	private int iva;
+	private float pvp;
+	
+	public Product () { }
+
+	public Product( List<Long> shelfIn , int valorUniDes, int iva, float pvp) {
+	
 		this.shelfIn = shelfIn;
 		this.valorUniDes = valorUniDes;
 		this.iva = iva;
 		this.pvp = pvp;
 	}
 
-	public double getId() {
-		return id;
-	}
+	
 
-	public void setId(int id) {
-		this.id = id;
-	}
-
-	public double getShelfIn() {
+	public List<Long> getShelfIn() {
 		return shelfIn;
 	}
 
-	public void setShelfIn(int shelfIn) {
+	public void setShelfIn(List<Long> shelfIn) {
 		this.shelfIn = shelfIn;
 	}
 
@@ -36,7 +34,7 @@ public class Product {
 		return valorUniDes;
 	}
 
-	public void setValorUniDes(double valorUniDes) {
+	public void setValorUniDes(int valorUniDes) {
 		this.valorUniDes = valorUniDes;
 	}
 
@@ -44,7 +42,7 @@ public class Product {
 		return iva;
 	}
 
-	public void setIva(double iva) {
+	public void setIva(int iva) {
 		this.iva = iva;
 	}
 
@@ -52,7 +50,14 @@ public class Product {
 		return pvp;
 	}
 
-	public void setPvp(double pvp) {
+	public void setPvp(float pvp) {
 		this.pvp = pvp;
 	}
+
+	@Override
+	public String toString() {
+		return "Product [shelfIn=" + shelfIn + ", valorUniDes=" + valorUniDes + ", iva=" + iva + ", pvp=" + pvp + "]";
+	}
+	
+	
 }

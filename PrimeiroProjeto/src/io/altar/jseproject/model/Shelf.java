@@ -1,48 +1,41 @@
 package io.altar.jseproject.model;
 
-public class Shelf {
-	private String  codigo;
-	private String  capacidade;
-	private String  produto;
-	private double  preco;
+public class Shelf extends Entity_ {
+	private int  capacity;
+	private int  productId;
+	private float  dailyPrice;
 	
-	public Shelf (String codigo, String capacidade, String produto, double preco) {
-		this.codigo = codigo;
-		this.capacidade = capacidade;
-		this.produto = produto;
-		this.preco = preco;
+	public Shelf ( int capacity, int productId, float dailyPrice) {
+		
+		this.capacity = capacity;
+		this.productId = productId;
+		this.dailyPrice = dailyPrice;
 	}
 
-	public String getCodigo() {
-		return codigo;
+	
+
+	public int getcapacity() {
+		return capacity;
 	}
 
-	public void setCodigo(String codigo) {
-		this.codigo = codigo;
+	public void setcapacity(int capacity) {
+		this.capacity = capacity;
 	}
 
-	public String getCapacidade() {
-		return capacidade;
+	public int getproductId() {
+		return productId;
 	}
 
-	public void setCapacidade(String capacidade) {
-		this.capacidade = capacidade;
+	public void setproductId(int productId) {
+		this.productId = productId;
 	}
 
-	public String getProduto() {
-		return produto;
+	public float getdailyPrice() {
+		return dailyPrice;
 	}
 
-	public void setProduto(String produto) {
-		this.produto = produto;
-	}
-
-	public double getPreco() {
-		return preco;
-	}
-
-	public void setPreco(double preco) {
-		this.preco = preco;
+	public void setdailyPrice(float dailyPrice) {
+		this.dailyPrice = dailyPrice;
 	}
 }
 
