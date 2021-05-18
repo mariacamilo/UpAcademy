@@ -56,8 +56,10 @@ public class Product extends Entity_ {
 
 	@Override
 	public String toString() {
-		return "Product [shelfIn=" + shelfIn + ", valorUniDes=" + valorUniDes + ", iva=" + iva + ", pvp=" + pvp + "]";
+		return "Product "+getId()+" [shelfIn=" + shelfIn + ", valorUniDes=" + valorUniDes + ", iva=" + iva + ", pvp=" + pvp + "]";
 	}
+
+	
 	
 	
 }
