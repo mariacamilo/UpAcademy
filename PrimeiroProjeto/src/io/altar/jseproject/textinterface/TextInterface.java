@@ -67,9 +67,9 @@ public class TextInterface {
 		}
 	}
 
-	private void removeProduct(Product p) {
+	private void removeProduct () {
 		System.out.println ("Insira o ID da prateleira de onde deseja remover o produto");
-		long id = scan.getInt();
+		
 		//TODO
 	}
 
@@ -85,9 +85,10 @@ public class TextInterface {
 		Product p = new Product();
 		p.setIva(23);
 		p.setPvp(10);
-		p.setValorUniDes(0);
+		p.setdesc(0);
 		pr.createEntity(p);
 	}
+	
 
 	public void getThird() {
 		while (true) {

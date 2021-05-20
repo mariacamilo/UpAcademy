@@ -37,7 +37,7 @@ public abstract class Entity_Repository<T extends Entity_> {
 	}
 	
 	//remover entities
-	public void removeFromDataBase (Long id) {
+	public void removeFromDataBase (long id) {
 		mapa.remove(id);
 	}
 	

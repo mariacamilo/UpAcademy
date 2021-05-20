@@ -12,6 +12,12 @@ public class Shelf extends Entity_ {
 		this.dailyPrice = dailyPrice;
 	}
 
+	public Shelf (int capacity, float dailyPrice ) {
+		this.capacity = capacity;
+		this.dailyPrice = dailyPrice;
+	}
+	
+	public Shelf () {}
 	
 
 	public int getcapacity() {

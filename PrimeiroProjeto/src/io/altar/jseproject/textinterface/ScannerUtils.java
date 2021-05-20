@@ -25,4 +25,16 @@ public class ScannerUtils {
 		} while (true);
 	}
 
+	public int getInRange(int min, int max) {
+		do { 
+			int value = getInt ();
+			if (value >= min && value <= max) {
+				return value; 
+			}
+		} while (true);
+		
+	}
+			
+		
+	
 }
